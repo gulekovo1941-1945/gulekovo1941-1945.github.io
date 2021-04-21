@@ -99,6 +99,20 @@ $(document).ready(function()
    $("a[rel^='PhotoGallery29']").fancybox({});
 });
 </script>
+<!-- Yandex.Metrika counter -->
+<script >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(76281799, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/76281799" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 <body>
 <div id="container">
@@ -511,6 +525,7 @@ function TimerStartTimer2()
       ShowObjectWithEffect('wb_GlavnyiText', 0, 'fade', 500);
       ShowObjectWithEffect('TabsTrud', 1, 'fade', 700);
       ShowObjectWithEffect('wb_TrudText', 1, 'fade', 700);
+      ShowObjectWithEffect('wb_Glvnayastranica', 1, 'fade', 700);
    }, 1000);
 }
 function TimerStopTimer2()
@@ -531,6 +546,7 @@ function TimerStartTimer3()
       ShowObjectWithEffect('wb_GlavnyiText', 0, 'fade', 500);
       ShowObjectWithEffect('TabsDeti', 1, 'fade', 700);
       ShowObjectWithEffect('wb_DetiText', 1, 'fade', 700);
+      ShowObjectWithEffect('wb_Glvnayastranica', 1, 'fade', 700);
    }, 1000);
 }
 function TimerStopTimer3()
@@ -590,13 +606,13 @@ function TimerStopTimer3()
 </div>
 </div>
 </div>
-<div id="LStorona" style="position:fixed;text-align:left;left:0;top:0;bottom:0;width:70px;z-index:71;">
+<div id="LStorona" style="position:fixed;text-align:left;left:0;top:0;bottom:0;width:70px;z-index:72;">
 </div>
-<div id="PStorona" style="position:fixed;text-align:right;right:0;top:0;bottom:0;width:70px;z-index:72;">
+<div id="PStorona" style="position:fixed;text-align:right;right:0;top:0;bottom:0;width:70px;z-index:73;">
 <div id="PStorona_Container" style="width:1078px;position:relative;margin-left:auto;margin-right:0;text-align:left;">
 </div>
 </div>
-<div id="Glavnyisloy" style="position:fixed;text-align:left;left:0;top:0;right:0;bottom:0;width:1072px;height:900px;margin-left:auto;margin-top:auto;margin-right:auto;margin-bottom:auto;z-index:73;">
+<div id="Glavnyisloy" style="position:fixed;text-align:left;left:0;top:0;right:0;bottom:0;width:1072px;height:900px;margin-left:auto;margin-top:auto;margin-right:auto;margin-bottom:auto;z-index:74;">
 <div id="Trud" style="position:absolute;text-align:left;left:288px;top:66px;width:317px;height:400px;">
 <div id="wb_ImageTrud" style="position:absolute;left:16px;top:27px;width:284px;height:346px;">
 <a href="#" onclick="ShowObjectWithEffect('Trud', 0, 'fade', 500);TimerStartTimer2();return false;" onmousemove="SetImage('ImageTrud','images/trud2.png');return false;" onmouseout="SetImage('ImageTrud','images/trud.png');return false;"><img src="images/trud.png" id="ImageTrud" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
@@ -623,6 +639,7 @@ function TimerStartTimer1()
       ShowObjectWithEffect('wb_GlavnyiText', 0, 'fade', 500);
       ShowObjectWithEffect('TabsVOV', 1, 'fade', 700);
       ShowObjectWithEffect('wb_VovText', 1, 'fade', 700);
+      ShowObjectWithEffect('wb_Glvnayastranica', 1, 'fade', 700);
    }, 1000);
 }
 function TimerStopTimer1()
@@ -641,6 +658,8 @@ function TimerStopTimer1()
 <a href="#" onclick="ShowObject('wb_TrudText', 0);ShowObject('TabsTrud', 0);ShowObjectWithEffect('Soldat', 1, 'fade', 500);ShowObjectWithEffect('Trud', 1, 'fade', 500);ShowObjectWithEffect('Deti', 1, 'fade', 500);ShowObjectWithEffect('wb_GlavnyiText', 1, 'fade', 500);return false;"><img src="images/trudtext.jpg" id="TrudText" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
 <div id="wb_DetiText" style="position:absolute;left:50px;top:31px;width:700px;height:82px;visibility:hidden;">
 <a href="#" onclick="ShowObject('wb_DetiText', 0);ShowObject('TabsDeti', 0);ShowObjectWithEffect('Soldat', 1, 'fade', 500);ShowObjectWithEffect('Trud', 1, 'fade', 500);ShowObjectWithEffect('Deti', 1, 'fade', 500);ShowObjectWithEffect('wb_GlavnyiText', 1, 'fade', 500);return false;"><img src="images/DetiText.jpg" id="DetiText" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_Glvnayastranica" style="position:absolute;left:210px;top:776px;width:380px;height:78px;visibility:hidden;">
+<a href="#" onclick="ShowObject('wb_DetiText', 0);ShowObject('TabsDeti', 0);ShowObjectWithEffect('Soldat', 1, 'fade', 500);ShowObjectWithEffect('Trud', 1, 'fade', 500);ShowObjectWithEffect('Deti', 1, 'fade', 500);ShowObjectWithEffect('wb_GlavnyiText', 1, 'fade', 500);ShowObject('wb_TrudText', 0);ShowObject('wb_VovText', 0);ShowObject('TabsTrud', 0);ShowObject('TabsVOV', 0);ShowObject('wb_Glvnayastranica', 0);return false;"><img src="images/glvnayastranica.jpg" id="Glvnayastranica" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
 </div>
 </body>
 </html>
