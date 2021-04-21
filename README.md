@@ -1,1 +1,0 @@
-# gulekovo1941-1945.github.io
